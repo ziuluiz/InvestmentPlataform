@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentPlataform.Server", "InvestmentPlataform\Server\InvestmentPlataform.Server.csproj", "{8E5CA334-6A18-4C03-94A4-8F3441C1A133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentPlataform.Server", "InvestmentPlataform\Server\InvestmentPlataform.Server.csproj", "{8E5CA334-6A18-4C03-94A4-8F3441C1A133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentPlataform.Client", "InvestmentPlataform\Client\InvestmentPlataform.Client.csproj", "{060B32F1-E62E-4511-8481-E0D75C442EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentPlataform.Client", "InvestmentPlataform\Client\InvestmentPlataform.Client.csproj", "{060B32F1-E62E-4511-8481-E0D75C442EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentPlataform.Shared", "InvestmentPlataform\Shared\InvestmentPlataform.Shared.csproj", "{0A0C0CBD-4983-445B-91BB-D45DB1A3BA07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentPlataform.Shared", "InvestmentPlataform\Shared\InvestmentPlataform.Shared.csproj", "{0A0C0CBD-4983-445B-91BB-D45DB1A3BA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
