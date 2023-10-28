@@ -2,7 +2,9 @@ global using InvestmentPlataform.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using InvestmentPlataform.Server.Data;
 global using InvestmentPlataform.Server.Services.ProductsServices;
+global using InvestmentPlataform.Server.Services.CategoryServices;
 using Microsoft.AspNetCore.ResponseCompression;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 
