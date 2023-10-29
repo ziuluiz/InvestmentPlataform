@@ -47,7 +47,8 @@
 					Title = "teste11",
 					Description = "desc1",
 					ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_red_number-1.svg/800px-Eo_circle_red_number-1.svg.png",
-					CategoryId = 1
+					CategoryId = 1,
+					Featured = true
 				},
 				new Product
 				{
