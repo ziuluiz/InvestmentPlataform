@@ -5,6 +5,7 @@ global using InvestmentPlataform.Server.Services.ProductsServices;
 global using InvestmentPlataform.Server.Services.CategoryServices;
 global using InvestmentPlataform.Server.Services.CartService;
 using Microsoft.AspNetCore.ResponseCompression;
+using InvestmentPlataform.Server.Services.AuthService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICartService, CartService>();
-
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
