@@ -40,7 +40,7 @@ namespace InvestmentPlataform.Server.Services.OrderServices
 			_context.Orders.Add(order);
 
 			_context.CartItems.RemoveRange(_context.CartItems
-				.Where(ci => ci.UserId == GetUserId()));
+				.Where(ci => ci.UserId == _authService.GetUserId()));
 
 			await _context.SaveChangesAsync();
 
