@@ -4,8 +4,9 @@ global using InvestmentPlataform.Server.Data;
 global using InvestmentPlataform.Server.Services.ProductsServices;
 global using InvestmentPlataform.Server.Services.CategoryServices;
 global using InvestmentPlataform.Server.Services.CartService;
+global using InvestmentPlataform.Server.Services.AuthService;
+global using InvestmentPlataform.Server.Services.OrderServices;
 using Microsoft.AspNetCore.ResponseCompression;
-using InvestmentPlataform.Server.Services.AuthService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
@@ -27,6 +28,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 	.AddJwtBearer(options =>
 	{ 
