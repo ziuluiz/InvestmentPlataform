@@ -1,7 +1,7 @@
 ﻿@inject IProductService ProductService
 @implements IDisposable
 
-<center><h2>Ações recomendadas</h2></center>
+<center><h2>Placeholder</h2></center>
 @if(ProductService.Products == null || ProductService.Products.Count == 0)
 {
 	<span>@ProductService.Message</span>
@@ -23,7 +23,7 @@ else
 					@if (product.Variants != null && product.Variants.Count > 0)
 					{
 						<h5 class="price">
-							$@product.Variants[0].Price
+							@product.Variants[0].Price
 						</h5>
 					}
 				</div>

@@ -31,15 +31,15 @@ else
                 @if (GetSelectedVariant().OriginalPrice > GetSelectedVariant().Price)
                 {
                     <h6 class="text-muted original-price">
-                        $@GetSelectedVariant().OriginalPrice
+                        @GetSelectedVariant().OriginalPrice
                     </h6>
                 }
                 <h4 class="price">
-                    $@GetSelectedVariant().Price
+                    @GetSelectedVariant().Price
                 </h4>
             }
-            <button class="btn btn-primary" @onclick="AddToCart">
-                <i class="oi oi-cart"></i>&nbsp;&nbsp;&nbsp;Add to Cart
+            <button class="btn btn-primary-cart border" @onclick="AddToCart">
+                <i class="oi oi-clipboard"></i>&nbsp;&nbsp;&nbsp;Add to stastics
             </button>
         </div>
     </div>

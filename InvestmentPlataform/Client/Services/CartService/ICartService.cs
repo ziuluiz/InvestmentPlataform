@@ -1,4 +1,7 @@
-﻿namespace InvestmentPlataform.Client.Services.CartService
+﻿
+
+
+namespace InvestmentPlataform.Client.Services.CartService
 {
 	public interface ICartService
 	{
