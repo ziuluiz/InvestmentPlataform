@@ -29,20 +29,20 @@
 				new Category
 				{
 					Id= 1,
-					Name = "categoria1",
-					Url = "categoria1"
+					Name = "Grãos",
+					Url = "Grãos"
 				}, 
 				new Category
 				{
 					Id = 2,
-					Name = "categoria2",
-					Url = "categoria2"
+					Name = "Frutas",
+					Url = "Frutas"
 				},
 				new Category
 				{
 					Id = 3,
-					Name = "categoria3",
-					Url = "categoria3"
+					Name = "Massas",
+					Url = "Massas"
 				}
 				);
 			modelBuilder.Entity<Product>().HasData(
